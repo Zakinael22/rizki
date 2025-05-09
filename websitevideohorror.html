@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Cinema</title>
+    <style>
+        :root {
+            --dark-bg: #1a1a1a;
+            --accent-color: #e50914;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            gap: 20px;
+        }
+
+        .profile-gif {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .movie-card {
+            background: #2d2d2d;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🎭 ʟɪʜᴀᴛᴀᴛᴀꜱ ᴡᴇʙꜱɪᴛᴇ ᴅᴀʀᴋ 🎭</h1>
+    </header>
+        
+    <!-- Movies Section -->
+    <div class="video-container">
+        <!-- Movie 1 -->
+        <div class="movie-card">
+            <h2>ʟɪʜᴀᴛʟᴀʜ 1</h2>
+            <video controls poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSicbl8Ng7mAj9Vj4a0Zdn_tA7Y0K-ExgwyKu_MNEQ55lY8-ZOVLDnMiE&s=10">
+                <source src="https://cdn.lewd.host/c2uWSff9.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>ʟɪʜᴀᴛʟᴀʜ ᴠɪᴅᴇᴏ ᴍᴏᴠɪᴇꜱ ʙᴀʀᴜ ꜰʀᴇᴇ</p>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+            <h2>ʟɪʜᴀᴛʟᴀʜ 2</h2>
+            <video controls poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSicbl8Ng7mAj9Vj4a0Zdn_tA7Y0K-ExgwyKu_MNEQ55lY8-ZOVLDnMiE&s=10">
+                <source src="https://cdn.lewd.host/orX5jRQd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>ʟɪʜᴀᴛʟᴀʜ ᴠɪᴅᴇᴏ ᴍᴏᴠɪᴇꜱ ʙᴀʀᴜ ꜰʀᴇᴇ</p>
+        </div>
+    </div>
+</body>
+</html>
